@@ -55,7 +55,10 @@ spec:
             - mountPath: /root/
               name: home
         - name: x11
-          image: registry.opensuse.org/home/atgracey/wallboardos/15.4/x11:icewm
+          env:
+            - name: DBUS_SESSION_BUS_ADDRESS
+              value: unix:path=/run/user/1000/bus
+          image: registry.opensuse.org/home/atgracey/wallboardos/15.4/wallboardos:lxde-15.4
           imagePullPolicy: Always
           securityContext:
             allowPrivilegeEscalation: true
