@@ -3,6 +3,7 @@ helm:
   chart: akri-dev
   repo: https://project-akri.github.io/akri/
   releaseName: akri
+  version: 0.10.2
   values:
     kubernetesDistro: k3s
     udev:
