@@ -42,7 +42,7 @@ spec:
             - name: URL
               value: http://game-client.game:8080 
             - name: DISPLAY
-              value: ':0'
+              value: ':2'
           image: registry.opensuse.org/home/atgracey/wallboardos/15.4/firefox:latest
           imagePullPolicy: Always
           securityContext:
